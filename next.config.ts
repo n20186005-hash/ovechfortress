@@ -17,7 +17,7 @@ const nextConfig = {
       {
         source: '/:path*',
         destination: 'https://ovechfortress.com/:path*',
-        has: [{ type: 'host', value: 'www.ovechfortress.com' }],
+        has: [{ type: 'host' as const, value: 'www.ovechfortress.com' }],
         permanent: true,
       },
     ];
