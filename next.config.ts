@@ -12,6 +12,16 @@ const nextConfig = {
       { protocol: 'https' as const, hostname: '*.google.com' },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        destination: 'https://ovechfortress.com/:path*',
+        has: [{ type: 'host', value: 'www.ovechfortress.com' }],
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default withNextIntl(nextConfig);

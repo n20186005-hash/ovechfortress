@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Fortress „Ovech“ (Fortress „Ovech“) – 瓦尔纳，保加利亚",
-    "description": "Fortress „Ovech“完整旅游指南。了解这个要塞，包括位置、便利设施和游客信息。"
+    "title": "奥韦奇要塞（Ovech Fortress）普罗瓦迪亚 – 开放时间、门票与游览指南",
+    "description": "奥韦奇要塞位于保加利亚普罗瓦迪亚的旅游指南：开放时间、门票价格、交通方式、地图与历史介绍。"
   },
   "header": {
     "home": "首页",
@@ -12,9 +12,9 @@
   },
   "hero": {
     "title": "Fortress „Ovech“",
-    "subtitle": "瓦尔纳州 · Fortress „Ovech“",
+    "subtitle": "普罗瓦迪亚，瓦尔纳州 · 奥韦奇要塞",
     "rating": "4.6",
-    "reviewCount": "5,181 条评价",
+    "reviewCount": "5,310 条评价",
     "type": "古迹地标",
     "openMaps": "在Google地图上查看位置",
     "mapsLink": "https://maps.app.goo.gl/6i3FwKB2LmU58Bxw8"
@@ -98,7 +98,7 @@
     "city": "城市",
     "cityValue": "普罗瓦迪亚 (Provadia)",
     "googleRating": "谷歌评分",
-    "googleRatingValue": "4.6 (5,181)",
+    "googleRatingValue": "4.6 (5,310)",
     "address": "地址",
     "addressValue": "5CGX+54R, 9200 Provadia, 保加利亚",
     "telephone": "联系电话",
@@ -233,7 +233,7 @@
   },
   "footer": {
     "brandName": "Fortress „Ovech“",
-    "brandSubtitle": "瓦尔纳州 · Fortress „Ovech“",
+    "brandSubtitle": "普罗瓦迪亚，瓦尔纳州 · 奥韦奇要塞",
     "rights": "© 2026 独立旅游研究项目 · 保留所有权利。",
     "privacy": "隐私政策",
     "terms": "服务条款",

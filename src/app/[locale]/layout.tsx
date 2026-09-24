@@ -19,8 +19,7 @@ export async function generateMetadata({
 
   const zhUrl = `${baseUrl}/zh`;
   const enUrl = `${baseUrl}/en`;
-  const elUrl = `${baseUrl}/el`;
-  const trUrl = `${baseUrl}/tr`;
+  const bgUrl = `${baseUrl}/bg`;
   const selfUrl = `${baseUrl}/${locale}`;
 
   return {
@@ -31,7 +30,7 @@ export async function generateMetadata({
       title: messages.meta.title,
       description: messages.meta.description,
       siteName: "Fortress „Ovech“",
-      locale: locale === 'zh' ? 'zh_CN' : locale === 'en' ? 'en_US' : locale === 'bg' ? 'bg_BG' : locale === 'el' ? 'el_GR' : 'tr_TR',
+      locale: locale === 'zh' ? 'zh_CN' : locale === 'bg' ? 'bg_BG' : 'en_US',
       type: 'website',
     },
   };
@@ -54,7 +53,7 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale === 'zh' ? 'zh-CN' : locale === 'bg' ? 'bg-BG' : locale === 'el' ? 'el-GR' : 'en'} suppressHydrationWarning>
+    <html lang={locale === 'zh' ? 'zh-CN' : locale === 'bg' ? 'bg-BG' : 'en'} suppressHydrationWarning>
       <head>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX" crossOrigin="anonymous" />
         <meta name="google-adsense-account" content="ca-pub-XXXXXXXXXX" />

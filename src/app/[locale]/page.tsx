@@ -11,6 +11,8 @@ import Reviews from '@/components/Reviews';
 import MapEmbed from '@/components/MapEmbed';
 import FAQSection from '@/components/FAQSection';
 import Footer from '@/components/Footer';
+import JsonLd from '@/components/JsonLd';
+import type { Locale } from '@/data/attraction';
 
 export async function generateMetadata({
   params,
@@ -26,7 +28,7 @@ export async function generateMetadata({
         'zh': `${baseUrl}/zh`,
         'en': `${baseUrl}/en`,
         'bg': `${baseUrl}/bg`,
-        'x-default': `${baseUrl}/en`,
+        'x-default': `${baseUrl}/bg`,
       },
     },
   };
@@ -42,6 +44,7 @@ export default async function HomePage({
 
   return (
     <>
+      <JsonLd locale={locale as Locale} />
       <Header />
       <main>
         <Hero />
