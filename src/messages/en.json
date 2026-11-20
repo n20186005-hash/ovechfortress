@@ -4,6 +4,7 @@
     "description": "Plan your visit to Ovech Fortress in Provadia, Bulgaria. Find opening hours, ticket prices, how to get there, maps, and the fortress history."
   },
   "header": {
+    "explore": "Explore",
     "toggleTheme": "Toggle theme",
     "switchLanguage": "Switch language",
     "siteName": "Ovech Fortress",
@@ -13,11 +14,21 @@
     "map": "Map",
     "backToHome": "Back to Home"
   },
+  "explore": {
+    "title": "Explore Ovech and Nearby",
+    "description": "Find guides to the fortress ruins, nearby museums and routes from Varna.",
+    "all": "Browse all guides",
+    "home": "Back to the homepage",
+    "tip": "Visiting tip",
+    "map": "View on the map",
+    "fortressMap": "Ovech Fortress map",
+    "source": "Source"
+  },
   "hero": {
     "title": "Fortress „Ovech“",
     "subtitle": "Provadia, Varna Province · Ovech Fortress",
     "rating": "4.6",
-    "reviewCount": "5,310 reviews",
+    "reviewCount": "5,345 reviews",
     "type": "Historical Landmark",
     "openMaps": "View on Google Maps",
     "mapsLink": "https://maps.app.goo.gl/6i3FwKB2LmU58Bxw8"
@@ -103,7 +114,7 @@
     "city": "City",
     "cityValue": "Provadia",
     "googleRating": "Google Rating",
-    "googleRatingValue": "4.6 (5,310)",
+    "googleRatingValue": "4.6 (5,345)",
     "address": "Address",
     "addressValue": "5CGX+54R, 9200 Provadia, Bulgaria",
     "telephone": "Contact Phone",

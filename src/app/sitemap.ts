@@ -1,4 +1,5 @@
 import { MetadataRoute } from 'next';
+import { guideSlugs } from '@/data/guides';
 import { routing } from '@/i18n/routing';
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -10,7 +11,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '',
     '/privacy-policy',
     '/terms-of-service',
-    '/cookie-settings'
+    '/cookie-settings',
+    '/explore',
+    ...guideSlugs.map((slug) => `/explore/${slug}`),
   ];
 
   for (const locale of routing.locales) {

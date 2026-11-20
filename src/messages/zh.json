@@ -4,6 +4,7 @@
     "description": "奥韦奇要塞位于保加利亚普罗瓦迪亚的旅游指南：开放时间、门票价格、交通方式、地图与历史介绍。"
   },
   "header": {
+    "explore": "周边游览",
     "toggleTheme": "切换颜色主题",
     "switchLanguage": "切换语言",
     "siteName": "奥韦奇要塞",
@@ -13,11 +14,21 @@
     "map": "地图",
     "backToHome": "返回首页"
   },
+  "explore": {
+    "title": "探索奥韦奇要塞与周边",
+    "description": "查看要塞遗迹、周边博物馆及从瓦尔纳出发的路线。",
+    "all": "查看全部专题",
+    "home": "返回首页",
+    "tip": "游览建议",
+    "map": "在地图上查看",
+    "fortressMap": "奥韦奇要塞地图",
+    "source": "资料来源"
+  },
   "hero": {
     "title": "奥韦奇要塞",
     "subtitle": "普罗瓦迪亚，瓦尔纳州 · 奥韦奇要塞",
     "rating": "4.6",
-    "reviewCount": "5,310 条评价",
+    "reviewCount": "5,345 条评价",
     "type": "古迹地标",
     "openMaps": "在Google地图上查看位置",
     "mapsLink": "https://maps.app.goo.gl/6i3FwKB2LmU58Bxw8"
@@ -103,7 +114,7 @@
     "city": "城市",
     "cityValue": "普罗瓦迪亚",
     "googleRating": "谷歌评分",
-    "googleRatingValue": "4.6 (5,310)",
+    "googleRatingValue": "4.6 (5,345)",
     "address": "地址",
     "addressValue": "5CGX+54R, 保加利亚普罗瓦迪亚 9200",
     "telephone": "联系电话",

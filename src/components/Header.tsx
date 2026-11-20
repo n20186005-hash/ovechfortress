@@ -1,5 +1,6 @@
 'use client';
 
+import { Link } from '@/i18n/routing';
 import { useTranslations, useLocale } from 'next-intl';
 import LanguageToggle from './LanguageToggle';
 import ThemeToggle from './ThemeToggle';
@@ -32,7 +33,11 @@ export default function Header() {
           {t('siteName')}
         </a>
 
-        <nav className="flex items-center gap-3 md:gap-6">
+        <nav className="flex flex-wrap items-center justify-center gap-x-2 gap-y-0.5 md:gap-6">
+          <Link href="/explore" className="text-xs sm:text-sm font-medium transition-colors"
+            style={{ color: scrolled ? 'var(--text-secondary)' : 'rgba(255,255,255,0.85)' }}>
+            {t('explore')}
+          </Link>
           {(['gallery', 'reviews', 'map'] as const).map((section) => (
             <a
               key={section}

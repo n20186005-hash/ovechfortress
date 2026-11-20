@@ -1,7 +1,8 @@
 'use client';
 
+import { useParams } from 'next/navigation';
 import { useLocale, useTranslations } from 'next-intl';
-import { usePathname, routing, type Locale, useRouter } from '@/i18n/routing';
+import { usePathname, routing, useRouter } from '@/i18n/routing';
 import { useState, useRef, useEffect } from 'react';
 
 const labels: Record<string, string> = {
@@ -14,6 +15,7 @@ export default function LanguageToggle() {
   const t = useTranslations('header');
   const locale = useLocale();
   const pathname = usePathname();
+  const { slug } = useParams<{ slug?: string }>();
   const router = useRouter();
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
@@ -61,7 +63,11 @@ export default function LanguageToggle() {
               lang={loc}
               onClick={() => {
                 setOpen(false);
-                router.replace(pathname, { locale: loc as Locale });
+                if (pathname === '/explore/[slug]') {
+                  if (slug) router.replace({ pathname, params: { slug } }, { locale: loc });
+                } else {
+                  router.replace(pathname, { locale: loc });
+                }
               }}
               className="block w-full text-left px-4 py-2.5 text-sm transition-colors"
               style={{

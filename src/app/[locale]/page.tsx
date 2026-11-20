@@ -10,6 +10,7 @@ import Gallery from '@/components/Gallery';
 import Reviews from '@/components/Reviews';
 import MapEmbed from '@/components/MapEmbed';
 import FAQSection from '@/components/FAQSection';
+import NearbyGuides from '@/components/NearbyGuides';
 import Footer from '@/components/Footer';
 import JsonLd from '@/components/JsonLd';
 import type { Locale } from '@/data/attraction';
@@ -52,6 +53,7 @@ export default async function HomePage({
         <HoursSection />
         <TicketsSection />
         <TransportSection />
+        <NearbyGuides locale={locale as Locale} limit={6} />
         <Gallery />
         <Reviews />
         <FAQSection />

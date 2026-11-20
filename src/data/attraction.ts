@@ -17,7 +17,7 @@ export const ATTRACTION = {
     longitude: 27.4485,
   },
   rating: 4.6,
-  reviewCount: 5310,
+  reviewCount: 5345,
   isAccessibleForFree: true,
   // Alternate display names per locale (used for schema.org alternateName).
   alternateName: {
