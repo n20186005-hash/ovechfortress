@@ -23,7 +23,7 @@ export default async function JsonLd({ locale }: { locale: Locale }) {
       {
         '@type': ['TouristAttraction', 'HistoricalLandmark', 'LandmarksOrHistoricalBuildings'],
         '@id': `${url}/#attraction`,
-        name: ATTRACTION.name,
+        name: messages.hero.title,
         alternateName: Object.values(ATTRACTION.alternateName),
         description: ATTRACTION.description[locale],
         url: selfUrl,

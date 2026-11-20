@@ -3,9 +3,7 @@ import { useTranslations, useLocale } from 'next-intl';
 export default function Footer() {
   const t = useTranslations('footer');
   const locale = useLocale();
-  const prefix = locale === 'en' ? '' : `/${locale}`;
-
-  const officialLinks = t.raw('officialLinks') || {};
+  const prefix = `/${locale}`;
 
   return (
     <footer
@@ -28,22 +26,22 @@ export default function Footer() {
             </h3>
             <div className="flex flex-col gap-2">
               <a href="https://visit.varna.bg/" target="_blank" rel="noopener noreferrer" className="hover:underline text-sm" style={{ color: 'var(--accent)' }}>
-                {officialLinks.sofiaCity || 'Visit Varna'}
+                {t('officialLinks.sofiaCity')}
               </a>
               <a href="http://www.provadia.bg/" target="_blank" rel="noopener noreferrer" className="hover:underline text-sm" style={{ color: 'var(--accent)' }}>
-                {officialLinks.sofiaTourism || 'Provadia Municipality'}
+                {t('officialLinks.sofiaTourism')}
               </a>
               <a href="https://www.tourism.government.bg/" target="_blank" rel="noopener noreferrer" className="hover:underline text-sm" style={{ color: 'var(--accent)' }}>
-                {officialLinks.bulgariaTourism || 'Ministry of Tourism'}
+                {t('officialLinks.bulgariaTourism')}
               </a>
               <a href="https://mc.government.bg/" target="_blank" rel="noopener noreferrer" className="hover:underline text-sm" style={{ color: 'var(--accent)' }}>
-                {officialLinks.bulgariaCulture || 'Ministry of Culture'}
+                {t('officialLinks.bulgariaCulture')}
               </a>
               <a href="http://ninkn.bg/" target="_blank" rel="noopener noreferrer" className="hover:underline text-sm" style={{ color: 'var(--accent)' }}>
-                {officialLinks.bulgariaHeritage || 'Institute of Cultural Heritage'}
+                {t('officialLinks.bulgariaHeritage')}
               </a>
               <a href="https://www.mfa.bg/en/services-travel/consular-services/travel-bulgaria/visa-bulgaria" target="_blank" rel="noopener noreferrer" className="hover:underline text-sm" style={{ color: 'var(--accent)' }}>
-                {officialLinks.bulgariaMFA || 'MFA - Consular Services'}
+                {t('officialLinks.bulgariaMFA')}
               </a>
             </div>
           </div>

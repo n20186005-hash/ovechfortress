@@ -4,6 +4,9 @@
     "description": "Туристически наръчник за Крепост „Овеч“ в Провадия, България: работно време, цени на билети, как да стигнете, карта и история на крепостта."
   },
   "header": {
+    "toggleTheme": "Смяна на цветовата тема",
+    "switchLanguage": "Смяна на езика",
+    "siteName": "Крепост „Овеч“",
     "home": "Начало",
     "gallery": "Галерия",
     "reviews": "Отзиви",
@@ -67,6 +70,8 @@
     ]
   },
   "faq": {
+    "answerLabel": "О:",
+    "questionLabel": "В:",
     "title": "Често задавани въпроси",
     "items": [
       {
@@ -97,7 +102,7 @@
     "countryValue": "България",
     "city": "Град",
     "cityValue": "Провадия",
-    "googleRating": "Google Рейтинг",
+    "googleRating": "Оценка в Google",
     "googleRatingValue": "4.6 (5,310)",
     "address": "Адрес",
     "addressValue": "5CGX+54R, 9200 Провадия, България",
@@ -105,7 +110,7 @@
     "telephoneValue": "+35951842033",
     "accessibility": "Достъпност",
     "accessibilityValue": "Частично достъпно",
-    "plusCode": "Plus Code",
+    "plusCode": "Код за местоположение",
     "plusCodeValue": "5CGX+54R Провадия, България"
   },
   "hours": {
@@ -156,6 +161,7 @@
     ]
   },
   "gallery": {
+    "photoLabel": "Снимка {number}",
     "closePhoto": "Затвори снимката",
     "previousPhoto": "Предишна снимка",
     "nextPhoto": "Следваща снимка",
@@ -230,6 +236,7 @@
     ]
   },
   "mapSection": {
+    "iframeTitle": "Карта на крепостта „Овеч“ в Google Карти",
     "title": "Местоположение на картата",
     "subtitle": "5CGX+54R, 9200 Провадия, България",
     "openMaps": "Вижте в Google Карти"
@@ -243,7 +250,7 @@
     "cookies": "Настройки на бисквитките",
     "officialResourcesTitle": "Официални ресурси и информация",
     "officialLinks": {
-      "sofiaCity": "Visit Varna",
+      "sofiaCity": "Официален туристически сайт на Варна",
       "sofiaTourism": "Община Провадия",
       "bulgariaTourism": "Министерство на туризма",
       "bulgariaCulture": "Министерство на културата",

@@ -1,9 +1,12 @@
 {
   "meta": {
-    "title": "奥韦奇要塞（Ovech Fortress）普罗瓦迪亚 – 开放时间、门票与游览指南",
+    "title": "奥韦奇要塞普罗瓦迪亚 – 开放时间、门票与游览指南",
     "description": "奥韦奇要塞位于保加利亚普罗瓦迪亚的旅游指南：开放时间、门票价格、交通方式、地图与历史介绍。"
   },
   "header": {
+    "toggleTheme": "切换颜色主题",
+    "switchLanguage": "切换语言",
+    "siteName": "奥韦奇要塞",
     "home": "首页",
     "gallery": "图库",
     "reviews": "评价",
@@ -11,7 +14,7 @@
     "backToHome": "返回首页"
   },
   "hero": {
-    "title": "Fortress „Ovech“",
+    "title": "奥韦奇要塞",
     "subtitle": "普罗瓦迪亚，瓦尔纳州 · 奥韦奇要塞",
     "rating": "4.6",
     "reviewCount": "5,310 条评价",
@@ -20,8 +23,8 @@
     "mapsLink": "https://maps.app.goo.gl/6i3FwKB2LmU58Bxw8"
   },
   "intro": {
-    "title": "探索 Fortress „Ovech“",
-    "description": "Fortress „Ovech“是位于瓦尔纳州普罗瓦迪亚（Provadia）的壮丽古迹地标。要塞享有令人惊叹的壮丽全景，带您深入了解保加利亚的中世纪历史。这里是游客探索、摄影和放松的最爱之地。",
+    "title": "探索 奥韦奇要塞",
+    "description": "奥韦奇要塞是位于瓦尔纳州普罗瓦迪亚的壮丽古迹地标。要塞享有令人惊叹的壮丽全景，带您深入了解保加利亚的中世纪历史。这里是游客探索、摄影和放松的最爱之地。",
     "visitGuide": {
       "title": "游览建议",
       "items": [
@@ -42,7 +45,7 @@
     }
   },
   "knowledge": {
-    "title": "关于 Fortress „Ovech“",
+    "title": "关于 奥韦奇要塞",
     "sections": [
       {
         "id": "history",
@@ -67,10 +70,12 @@
     ]
   },
   "faq": {
+    "answerLabel": "答：",
+    "questionLabel": "问：",
     "title": "常见问题解答",
     "items": [
       {
-        "question": "Fortress „Ovech“ 什么时候开放？",
+        "question": "奥韦奇要塞 什么时候开放？",
         "answer": "要塞全年开放，游客全天都可以进入。没有特定的营业时间限制。"
       },
       {
@@ -90,22 +95,22 @@
   "basicInfo": {
     "title": "基础信息",
     "officialName": "正式名称",
-    "officialNameValue": "Fortress „Ovech“",
+    "officialNameValue": "奥韦奇要塞",
     "type": "景点类型",
     "typeValue": "古迹地标",
     "country": "国家",
-    "countryValue": "保加利亚 (Bulgaria)",
+    "countryValue": "保加利亚",
     "city": "城市",
-    "cityValue": "普罗瓦迪亚 (Provadia)",
+    "cityValue": "普罗瓦迪亚",
     "googleRating": "谷歌评分",
     "googleRatingValue": "4.6 (5,310)",
     "address": "地址",
-    "addressValue": "5CGX+54R, 9200 Provadia, 保加利亚",
+    "addressValue": "5CGX+54R, 保加利亚普罗瓦迪亚 9200",
     "telephone": "联系电话",
     "telephoneValue": "+35951842033",
     "accessibility": "无障碍设施",
     "accessibilityValue": "部分区域可通行",
-    "plusCode": "Plus Code",
+    "plusCode": "地图定位码",
     "plusCodeValue": "5CGX+54R 普罗瓦迪亚, 保加利亚"
   },
   "hours": {
@@ -131,7 +136,7 @@
   "transport": {
     "title": "交通指南",
     "fromCenter": "从瓦尔纳市中心",
-    "fromCenterDesc": "从瓦尔纳市中心出发，沿 A2 高速公路向西（舒门方向）行驶，在普罗瓦迪亚（Provadia）出口下高速，沿 208 号公路进入镇中心。全程约 40-50 分钟。",
+    "fromCenterDesc": "从瓦尔纳市中心出发，沿 A2 高速公路向西（舒门方向）行驶，在普罗瓦迪亚出口下高速，沿 208 号公路进入镇中心。全程约 40-50 分钟。",
     "fromStation": "公共交通",
     "fromStationDesc": "从普罗瓦迪亚火车站/汽车站出发，步行约 20-30 分钟或乘坐出租车 5 分钟即可到达要塞的主要步道入口。",
     "fromAirport": "从机场",
@@ -139,16 +144,16 @@
     "publicTransport": "公共交通",
     "publicTransportDesc": "瓦尔纳和普罗瓦迪亚之间每天有定期的火车 (BDZ) 和巴士。抵达后，您可以徒步登山或乘坐出租车前往北侧停车场。",
     "walking": "步行",
-    "walkingDesc": "如需步行前往要塞，可从普罗瓦迪亚镇内的 'Ovech' 街沿东侧的岩石阶梯拾级而上，或选择西侧的生态步道。",
+    "walkingDesc": "如需步行前往要塞，可从普罗瓦迪亚镇内的 奥韦奇街沿东侧的岩石阶梯拾级而上，或选择西侧的生态步道。",
     "driving": "自驾",
-    "drivingDesc": "最便捷的方式是自驾前往北门（Northern Entrance），那里设有专用停车场。在镇中心顺着“Крепост Овеч”的指示牌行驶即可到达。",
+    "drivingDesc": "最便捷的方式是自驾前往北门，那里设有专用停车场。在镇中心顺着奥韦奇要塞的指示牌行驶即可到达。",
     "getDirections": "获取前往路线"
   },
   "route": {
     "title": "推荐游览路线",
     "overview": "探索要塞及其周边环境。",
     "steps": [
-      "进入 Fortress „Ovech“",
+      "进入 奥韦奇要塞",
       "走过壮观的桥梁",
       "探索古老的遗迹",
       "欣赏令人惊叹的全景",
@@ -156,11 +161,12 @@
     ]
   },
   "gallery": {
+    "photoLabel": "照片 {number}",
     "closePhoto": "关闭照片",
     "previousPhoto": "上一张照片",
     "nextPhoto": "下一张照片",
     "title": "照片画廊",
-    "subtitle": "Fortress „Ovech“ 之美",
+    "subtitle": "奥韦奇要塞之美",
     "captions": [
       "要塞景观",
       "绿色林荫道",
@@ -230,12 +236,13 @@
     ]
   },
   "mapSection": {
+    "iframeTitle": "奥韦奇要塞的 Google 地图",
     "title": "地图位置",
-    "subtitle": "5CGX+54R, 9200 Provadia, 保加利亚",
+    "subtitle": "5CGX+54R, 保加利亚普罗瓦迪亚 9200",
     "openMaps": "在Google地图上查看位置"
   },
   "footer": {
-    "brandName": "Fortress „Ovech“",
+    "brandName": "奥韦奇要塞",
     "brandSubtitle": "普罗瓦迪亚，瓦尔纳州 · 奥韦奇要塞",
     "rights": "© 2026 独立旅游研究项目 · 保留所有权利。",
     "privacy": "隐私政策",
@@ -243,18 +250,18 @@
     "cookies": "Cookie 设置",
     "officialResourcesTitle": "官方资源与资讯",
     "officialLinks": {
-      "sofiaCity": "Visit Varna",
-      "sofiaTourism": "Община Провадия",
-      "bulgariaTourism": "Министерство на туризма",
-      "bulgariaCulture": "Министерство на културата",
-      "bulgariaHeritage": "НИНКН",
-      "bulgariaMFA": "МВнР"
+      "sofiaCity": "瓦尔纳官方旅游网站",
+      "sofiaTourism": "普罗瓦迪亚市政府",
+      "bulgariaTourism": "保加利亚旅游部",
+      "bulgariaCulture": "保加利亚文化部",
+      "bulgariaHeritage": "保加利亚国家不动产文化遗产研究所",
+      "bulgariaMFA": "保加利亚外交部领事服务"
     },
     "disclaimer": "本网站是一个独立的第三方旅游资讯项目。我们与当地政府或其他官方机构没有任何关联。"
   },
   "officialManagement": {
-    "title": "关于 Fortress „Ovech“",
-    "text": "Fortress „Ovech“ 由地方当局和文化遗产组织维护。它是保加利亚历史地标的重要组成部分。"
+    "title": "关于 奥韦奇要塞",
+    "text": "奥韦奇要塞 由地方当局和文化遗产组织维护。它是保加利亚历史地标的重要组成部分。"
   },
   "privacy": {
     "title": "隐私政策",
@@ -280,7 +287,7 @@
     "sections": [
       {
         "heading": "网站内容与使用",
-        "content": "本网站提供有关Fortress „Ovech“的旅游、交通和历史信息。所有内容仅供参考。实际开放时间和景点信息可能随时更改；请参考官方公告。"
+        "content": "本网站提供有关奥韦奇要塞的旅游、交通和历史信息。所有内容仅供参考。实际开放时间和景点信息可能随时更改；请参考官方公告。"
       },
       {
         "heading": "知识产权",

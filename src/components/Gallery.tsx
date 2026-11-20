@@ -5,25 +5,25 @@ import { useRef, useState } from 'react';
 import { ATTRACTION } from '@/data/attraction';
 
 const photos = [
-  { src: '/gallery/fortress-ovech%20(1).jpg', alt: 'Fortress Ovech Photo 1' },
-  { src: '/gallery/fortress-ovech%20(1).png', alt: 'Fortress Ovech Photo 2' },
-  { src: '/gallery/fortress-ovech%20(10).jpg', alt: 'Fortress Ovech Photo 3' },
-  { src: '/gallery/fortress-ovech%20(11).jpg', alt: 'Fortress Ovech Photo 4' },
-  { src: '/gallery/fortress-ovech%20(13).jpg', alt: 'Fortress Ovech Photo 5' },
-  { src: '/gallery/fortress-ovech%20(14).jpg', alt: 'Fortress Ovech Photo 6' },
-  { src: '/gallery/fortress-ovech%20(17).jpg', alt: 'Fortress Ovech Photo 7' },
-  { src: '/gallery/fortress-ovech%20(18).jpg', alt: 'Fortress Ovech Photo 8' },
-  { src: '/gallery/fortress-ovech%20(19).jpg', alt: 'Fortress Ovech Photo 9' },
-  { src: '/gallery/fortress-ovech%20(2).jpg', alt: 'Fortress Ovech Photo 10' },
-  { src: '/gallery/fortress-ovech%20(21).jpg', alt: 'Fortress Ovech Photo 11' },
-  { src: '/gallery/fortress-ovech%20(22).jpg', alt: 'Fortress Ovech Photo 12' },
-  { src: '/gallery/fortress-ovech%20(23).jpg', alt: 'Fortress Ovech Photo 13' },
-  { src: '/gallery/fortress-ovech%20(3).jpg', alt: 'Fortress Ovech Photo 14' },
-  { src: '/gallery/fortress-ovech%20(5).jpg', alt: 'Fortress Ovech Photo 15' },
-  { src: '/gallery/fortress-ovech%20(6).jpg', alt: 'Fortress Ovech Photo 16' },
-  { src: '/gallery/fortress-ovech%20(7).jpg', alt: 'Fortress Ovech Photo 17' },
-  { src: '/gallery/fortress-ovech%20(8).jpg', alt: 'Fortress Ovech Photo 18' },
-  { src: '/gallery/fortress-ovech%20(9).jpg', alt: 'Fortress Ovech Photo 19' },
+  { src: '/gallery/fortress-ovech%20(1).jpg' },
+  { src: '/gallery/fortress-ovech%20(1).png' },
+  { src: '/gallery/fortress-ovech%20(10).jpg' },
+  { src: '/gallery/fortress-ovech%20(11).jpg' },
+  { src: '/gallery/fortress-ovech%20(13).jpg' },
+  { src: '/gallery/fortress-ovech%20(14).jpg' },
+  { src: '/gallery/fortress-ovech%20(17).jpg' },
+  { src: '/gallery/fortress-ovech%20(18).jpg' },
+  { src: '/gallery/fortress-ovech%20(19).jpg' },
+  { src: '/gallery/fortress-ovech%20(2).jpg' },
+  { src: '/gallery/fortress-ovech%20(21).jpg' },
+  { src: '/gallery/fortress-ovech%20(22).jpg' },
+  { src: '/gallery/fortress-ovech%20(23).jpg' },
+  { src: '/gallery/fortress-ovech%20(3).jpg' },
+  { src: '/gallery/fortress-ovech%20(5).jpg' },
+  { src: '/gallery/fortress-ovech%20(6).jpg' },
+  { src: '/gallery/fortress-ovech%20(7).jpg' },
+  { src: '/gallery/fortress-ovech%20(8).jpg' },
+  { src: '/gallery/fortress-ovech%20(9).jpg' },
 ];
 
 export default function Gallery() {
@@ -33,7 +33,7 @@ export default function Gallery() {
   const captions = t.raw('captions') as string[];
   const galleryPhotos = photos.map((photo, index) => ({
     ...photo,
-    alt: captions[index] || photo.alt,
+    alt: captions[index] || t('photoLabel', {number: index + 1}),
   }));
 
   function changePhoto(offset: number) {

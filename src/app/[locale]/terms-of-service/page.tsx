@@ -14,7 +14,21 @@ export async function generateMetadata({
   const bgUrl = `${baseUrl}/bg/terms-of-service`;
   const selfUrl = `${baseUrl}/${locale}/terms-of-service`;
 
+  if (!['bg', 'en', 'zh'].includes(locale)) return {};
+  const messages = (await import(`@/messages/${locale}.json`)).default;
+  const title = `${messages.terms.title} · ${messages.header.siteName}`;
+  const description = messages.terms.sections[0].content;
+
   return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      siteName: messages.header.siteName,
+      locale: locale === 'zh' ? 'zh_CN' : locale === 'bg' ? 'bg_BG' : 'en_US',
+      type: 'website',
+    },
     alternates: {
       canonical: selfUrl,
       languages: {

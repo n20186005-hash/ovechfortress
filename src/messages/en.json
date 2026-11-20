@@ -4,6 +4,9 @@
     "description": "Plan your visit to Ovech Fortress in Provadia, Bulgaria. Find opening hours, ticket prices, how to get there, maps, and the fortress history."
   },
   "header": {
+    "toggleTheme": "Toggle theme",
+    "switchLanguage": "Switch language",
+    "siteName": "Ovech Fortress",
     "home": "Home",
     "gallery": "Gallery",
     "reviews": "Reviews",
@@ -67,6 +70,8 @@
     ]
   },
   "faq": {
+    "answerLabel": "A:",
+    "questionLabel": "Q:",
     "title": "Frequently Asked Questions",
     "items": [
       {
@@ -141,7 +146,7 @@
     "walking": "Walking",
     "walkingDesc": "To reach the fortress on foot, head to the eastern stairs starting from 'Ovech' street in Provadia, or take the western eco-trail.",
     "driving": "Driving",
-    "drivingDesc": "For the easiest access, drive to the Northern Entrance where a dedicated parking lot is available. Follow the signs for 'Крепост Овеч' from the town center.",
+    "drivingDesc": "For the easiest access, drive to the Northern Entrance where a dedicated parking lot is available. Follow the signs for Ovech Fortress from the town center.",
     "getDirections": "Get Directions"
   },
   "route": {
@@ -156,6 +161,7 @@
     ]
   },
   "gallery": {
+    "photoLabel": "Photo {number}",
     "closePhoto": "Close photo",
     "previousPhoto": "Previous photo",
     "nextPhoto": "Next photo",
@@ -230,6 +236,7 @@
     ]
   },
   "mapSection": {
+    "iframeTitle": "Ovech Fortress on Google Maps",
     "title": "Map Location",
     "subtitle": "5CGX+54R, 9200 Provadia, Bulgaria",
     "openMaps": "View on Google Maps"

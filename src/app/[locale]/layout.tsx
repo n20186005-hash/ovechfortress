@@ -14,6 +14,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
+  if (!routing.locales.some((supported) => supported === locale)) notFound();
   const messages = (await import(`@/messages/${locale}.json`)).default;
   const baseUrl = 'https://ovechfortress.com';
 
@@ -29,7 +30,7 @@ export async function generateMetadata({
     openGraph: {
       title: messages.meta.title,
       description: messages.meta.description,
-      siteName: "Fortress „Ovech“",
+      siteName: messages.header.siteName,
       locale: locale === 'zh' ? 'zh_CN' : locale === 'bg' ? 'bg_BG' : 'en_US',
       type: 'website',
     },
