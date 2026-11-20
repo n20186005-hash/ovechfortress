@@ -156,6 +156,9 @@
     ]
   },
   "gallery": {
+    "closePhoto": "Затвори снимката",
+    "previousPhoto": "Предишна снимка",
+    "nextPhoto": "Следваща снимка",
     "title": "Фотогалерия",
     "subtitle": "Красотата на Крепост „Овеч“",
     "captions": [

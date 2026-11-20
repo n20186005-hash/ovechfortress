@@ -156,6 +156,9 @@
     ]
   },
   "gallery": {
+    "closePhoto": "Close photo",
+    "previousPhoto": "Previous photo",
+    "nextPhoto": "Next photo",
     "title": "Photo Gallery",
     "subtitle": "The Beauty of Fortress „Ovech“",
     "captions": [

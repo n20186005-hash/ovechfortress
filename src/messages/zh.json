@@ -156,6 +156,9 @@
     ]
   },
   "gallery": {
+    "closePhoto": "关闭照片",
+    "previousPhoto": "上一张照片",
+    "nextPhoto": "下一张照片",
     "title": "照片画廊",
     "subtitle": "Fortress „Ovech“ 之美",
     "captions": [

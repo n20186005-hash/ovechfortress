@@ -1,7 +1,8 @@
 'use client';
 
-import { useTranslations, useMessages } from 'next-intl';
-import { useState, useCallback } from 'react';
+import { useTranslations } from 'next-intl';
+import { useRef, useState } from 'react';
+import { ATTRACTION } from '@/data/attraction';
 
 const photos = [
   { src: '/gallery/fortress-ovech%20(1).jpg', alt: 'Fortress Ovech Photo 1' },
@@ -27,30 +28,26 @@ const photos = [
 
 export default function Gallery() {
   const t = useTranslations('gallery');
-  const messages = useMessages() as any;
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isLightboxOpen, setIsLightboxOpen] = useState(false);
-  const captions = (messages?.gallery?.captions || []) as string[];
+  const dialog = useRef<HTMLDialogElement>(null);
+  const captions = t.raw('captions') as string[];
+  const galleryPhotos = photos.map((photo, index) => ({
+    ...photo,
+    alt: captions[index] || photo.alt,
+  }));
 
-  const galleryPhotos = photos.map((photo: any, i: number) => {
-    return {
-      ...photo,
-      alt: captions[i] || photo.alt,
-    };
-  });
+  function changePhoto(offset: number) {
+    setCurrentIndex((index) => (index + offset + photos.length) % photos.length);
+  }
 
-  const goToPrevious = useCallback(() => {
-    setCurrentIndex((prev: number) => (prev === 0 ? galleryPhotos.length - 1 : prev - 1));
-  }, [galleryPhotos.length]);
+  function openPhoto(index: number) {
+    setCurrentIndex(index);
+    dialog.current?.showModal();
+  }
 
-  const goToNext = useCallback(() => {
-    setCurrentIndex((prev: number) => (prev === galleryPhotos.length - 1 ? 0 : prev + 1));
-  }, [galleryPhotos.length]);
-
-  const openLightbox = () => setIsLightboxOpen(true);
-  const closeLightbox = () => setIsLightboxOpen(false);
-
-  const mapsLink = messages?.hero?.mapsLink || 'https://maps.app.goo.gl/6i3FwKB2LmU58Bxw8';
+  function closePhoto() {
+    dialog.current?.close();
+  }
 
   return (
     <>
@@ -67,34 +64,32 @@ export default function Gallery() {
 
           <div className="relative">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
-              {galleryPhotos.map((photo: any, i: number) => (
-                <div
-                  key={i}
+              {galleryPhotos.map((photo, i) => (
+                <button
+                  type="button"
+                  key={photo.src}
                   className={`gallery-item relative group cursor-pointer ${i === 0 ? 'col-span-2 row-span-2' : ''}`}
-                  onClick={() => {
-                    setCurrentIndex(i);
-                    openLightbox();
-                  }}
+                  onClick={() => openPhoto(i)}
                 >
                   <img
                     src={photo.src}
                     alt={photo.alt}
                     className="w-full h-full object-cover rounded-lg"
-                    style={{ minHeight: i === 0 ? '400px' : '180px' }}
+                    style={{ aspectRatio: '4 / 3' }}
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors rounded-lg flex items-end">
-                    <p className="text-white text-sm p-3 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <p className="text-white text-sm p-3 opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity">
                       {photo.alt}
                     </p>
                   </div>
-                </div>
+                </button>
               ))}
             </div>
 
             <div className="flex justify-center mt-6 gap-4 items-center">
               <a
-                href={mapsLink}
+                href={ATTRACTION.mapsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm hover:underline"
@@ -107,15 +102,24 @@ export default function Gallery() {
         </div>
       </section>
 
-      {isLightboxOpen && (
-        <div
-          className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center"
-          onClick={closeLightbox}
-        >
+      <dialog
+        ref={dialog}
+        aria-label={t('title')}
+        className="fixed inset-0 m-0 h-full w-full max-h-none max-w-none bg-black/95 p-0 backdrop:bg-black"
+        onClick={(event) => {
+          if (event.target === event.currentTarget) closePhoto();
+        }}
+        onKeyDown={(event) => {
+          if (event.key === 'ArrowLeft') changePhoto(-1);
+          if (event.key === 'ArrowRight') changePhoto(1);
+        }}
+      >
+        <div className="pointer-events-none flex h-full items-center justify-center">
           <button
-            onClick={closeLightbox}
-            className="absolute top-4 right-4 w-10 h-10 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center transition-colors"
-            aria-label="Close lightbox"
+            onClick={closePhoto}
+            autoFocus
+            className="pointer-events-auto absolute z-10 top-4 right-4 w-10 h-10 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center transition-colors"
+            aria-label={t('closePhoto')}
           >
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
               <line x1="18" y1="6" x2="6" y2="18" />
@@ -124,9 +128,9 @@ export default function Gallery() {
           </button>
 
           <button
-            onClick={(e) => { e.stopPropagation(); goToPrevious(); }}
-            className="absolute left-4 w-12 h-12 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center transition-colors"
-            aria-label="Previous photo"
+            onClick={() => changePhoto(-1)}
+            className="pointer-events-auto absolute z-10 left-4 w-12 h-12 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center transition-colors"
+            aria-label={t('previousPhoto')}
           >
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
               <polyline points="15 18 9 12 15 6" />
@@ -136,25 +140,24 @@ export default function Gallery() {
           <img
             src={galleryPhotos[currentIndex].src}
             alt={galleryPhotos[currentIndex].alt}
-            className="max-w-[90vw] max-h-[85vh] object-contain rounded-lg"
-            onClick={(e) => e.stopPropagation()}
+            className="pointer-events-auto max-w-[90vw] max-h-[85vh] object-contain rounded-lg"
           />
 
           <button
-            onClick={(e) => { e.stopPropagation(); goToNext(); }}
-            className="absolute right-4 w-12 h-12 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center transition-colors"
-            aria-label="Next photo"
+            onClick={() => changePhoto(1)}
+            className="pointer-events-auto absolute z-10 right-4 w-12 h-12 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center transition-colors"
+            aria-label={t('nextPhoto')}
           >
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
               <polyline points="9 18 15 12 9 6" />
             </svg>
           </button>
 
-          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white text-sm">
+          <div aria-live="polite" className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white text-sm">
             {currentIndex + 1} / {galleryPhotos.length}
           </div>
         </div>
-      )}
+      </dialog>
     </>
   );
 }
