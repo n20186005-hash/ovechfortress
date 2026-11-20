@@ -47,16 +47,14 @@ export default async function JsonLd({ locale }: { locale: Locale }) {
           {
             '@type': 'OpeningHoursSpecification',
             dayOfWeek: [
-              'Monday',
-              'Tuesday',
               'Wednesday',
               'Thursday',
               'Friday',
               'Saturday',
               'Sunday',
             ],
-            opens: '00:00',
-            closes: '23:59',
+            opens: '09:00',
+            closes: '17:30',
           },
         ],
         aggregateRating: {

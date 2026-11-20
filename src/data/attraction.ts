@@ -18,7 +18,7 @@ export const ATTRACTION = {
   },
   rating: 4.6,
   reviewCount: 5345,
-  isAccessibleForFree: true,
+  isAccessibleForFree: false,
   // Alternate display names per locale (used for schema.org alternateName).
   alternateName: {
     bg: 'Крепост „Овеч“',
@@ -27,9 +27,9 @@ export const ATTRACTION = {
   },
   // Short localized blurb used in the JSON-LD description.
   description: {
-    bg: 'Средновековна крепост „Овеч“ в Провадия, България — историческа забележителност с древни стени, панорамни гледки и свободен достъп целогодишно.',
-    en: 'Medieval Fortress „Ovech“ in Provadia, Bulgaria — a historical landmark with ancient walls, panoramic views, and free year-round access.',
-    zh: '位于保加利亚普罗瓦迪亚的中世纪奥韦奇要塞，是拥有古城墙与全景视野的历史地标，全年免费开放。',
+    bg: 'Средновековна крепост „Овеч“ в Провадия, България — историческа забележителност с каменни стени и панорамни гледки.',
+    en: 'Medieval Fortress „Ovech“ in Provadia, Bulgaria — a historical landmark with stone walls and panoramic views.',
+    zh: '位于保加利亚普罗瓦迪亚的中世纪奥韦奇要塞，是拥有古城墙与全景视野的历史地标。',
   },
 } as const;
 

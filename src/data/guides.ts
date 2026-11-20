@@ -40,12 +40,12 @@ const catalog: readonly Guide[] = [
 const languageIndex = { bg: 1, en: 2, zh: 3 } as const;
 export const guideSlugs = catalog.map(([slug]) => slug);
 
-const externalPlaces: Record<string, { query: string; source: string }> = {
-  'provadia-centre': { query: 'Provadia town centre, Bulgaria', source: 'https://tourism.government.bg/en/tourist-destinations/2804/5506' },
-  'provadia-museum': { query: 'Historical Museum Provadia, Bulgaria', source: 'https://www.museology.bg/en/museums/i158/' },
-  solnitsata: { query: 'Provadia-Solnitsata prehistoric complex, Bulgaria', source: 'https://www.provadia-solnitsata.com/en/visit' },
-  'ravna-monastery': { query: 'Ravna Medieval Monastery, Ravna, Provadia, Bulgaria', source: 'https://www.museology.bg/en/museums/i158/' },
-  'devnya-mosaics': { query: 'Museum of Mosaics, Devnya, Bulgaria', source: 'https://visit.varna.bg/en/nazad-v-istoriyata.html' },
+const externalPlaces: Record<string, { source: string }> = {
+  'provadia-centre': { source: 'https://tourism.government.bg/en/tourist-destinations/2804/5506' },
+  'provadia-museum': { source: 'https://www.museology.bg/en/museums/i158/' },
+  solnitsata: { source: 'https://www.provadia-solnitsata.com/en/visit' },
+  'ravna-monastery': { source: 'https://www.museology.bg/en/museums/i158/' },
+  'devnya-mosaics': { source: 'https://visit.varna.bg/en/nazad-v-istoriyata.html' },
 };
 
 export function guidesFor(locale: Locale) {
@@ -53,10 +53,9 @@ export function guidesFor(locale: Locale) {
     const [title, context, tip] = row[languageIndex[locale]];
     const slug = row[0];
     const place = externalPlaces[slug];
-    const map = place ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(place.query)}` : undefined;
     const source = place?.source ?? (['knights-prison', 'friars-holes', 'ivaylo'].includes(slug)
       ? 'https://tourism.government.bg/en/tourist-destinations/2804/5506'
       : 'https://visit.varna.bg/en/krepost_ovech_provadiya.html');
-    return { slug, title, context, tip, map, source };
+    return { slug, title, context, tip, source };
   });
 }

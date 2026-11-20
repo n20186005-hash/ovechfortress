@@ -15,6 +15,34 @@
     "backToHome": "Back to Home"
   },
   "explore": {
+    "photoResized": "Resized for the web",
+    "intro": "Discover this stop",
+    "highlights": "Highlights",
+    "basics": "Basic information",
+    "name": "Name",
+    "type": "Type of site",
+    "hours": "Opening hours",
+    "admission": "Admission and tickets",
+    "transport": "How to get here",
+    "discover": "History, architecture and experiences",
+    "furtherReading": "Explore further",
+    "continueTo": "If time allows, consider",
+    "notice": "Before you go",
+    "stay": "Where to stay",
+    "reviews": "Visitor reviews",
+    "rating": "Rating",
+    "fortressRating": "Ovech Fortress on Google Maps: {score}/5 ({count} reviews)",
+    "ratingUnavailable": "A separate rating has not been verified for this stop.",
+    "fortressReviews": "Ovech Fortress reviews on Google Maps",
+    "management": "Who looks after this site",
+    "observation": "History and what to look for",
+    "access": "Hours, admission and access",
+    "route": "Route and transport",
+    "photography": "Photography viewpoints",
+    "faq": "Frequently asked question",
+    "location": "Location and map",
+    "visitSource": "Current visitor information",
+    "sitePlan": "The map searches for the feature by name. For smaller remains, use the on-site plan and signs.",
     "title": "Explore Ovech and Nearby",
     "description": "Find guides to the fortress ruins, nearby museums and routes from Varna.",
     "all": "Browse all guides",
@@ -39,7 +67,7 @@
     "visitGuide": {
       "title": "Visit Tips",
       "items": [
-        "The fortress is open year-round and free to access.",
+        "The fortress has posted visiting hours and an admission fee.",
         "Best time to visit is early morning or evening.",
         "There are benches and resting areas.",
         "Suitable for walks with children and pets."
@@ -87,11 +115,11 @@
     "items": [
       {
         "question": "When is Fortress „Ovech“ open?",
-        "answer": "The fortress is open year-round and accessible to visitors throughout the day. There are no specific operating hours restrictions."
+        "answer": "Visit Varna lists Wednesday to Sunday, 09:00–17:30. Check before travelling for changes."
       },
       {
         "question": "Is there an entrance fee?",
-        "answer": "No, access to the fortress is completely free for all visitors."
+        "answer": "Yes. Visit Varna lists €2.05 for adults and €1.02 for children."
       },
       {
         "question": "Are there children's playgrounds?",
@@ -127,10 +155,10 @@
   "hours": {
     "title": "Visiting Hours",
     "park": "Park Access",
-    "parkTime": "Year-round, 24/7",
+    "parkTime": "Wednesday–Sunday, 09:00–17:30",
     "bestTime": "Best Time to Visit",
     "bestTimeSpring": "Spring: Pleasant weather, blooming flowers",
-    "bestTimeSummer": "Summer: Early morning or evening recommended",
+    "bestTimeSummer": "Summer: Consider visiting near opening time",
     "bestTimeAutumn": "Autumn: Mild temperatures, ideal for walks",
     "bestTimeWinter": "Winter: Fewer crowds, peaceful atmosphere",
     "tip": "Allow 1-2 hours for a full visit. Bring water and sun protection in summer."
@@ -138,11 +166,11 @@
   "tickets": {
     "title": "Admission Information",
     "park": "Park Access",
-    "parkPrice": "Free",
+    "parkPrice": "Adults €2.05 · Children €1.02",
     "parking": "Parking",
     "parkingPrice": "Street parking available in the area",
     "guided": "Guided Tours",
-    "guidedPrice": "No official guided tours"
+    "guidedPrice": "Ask the venue about guided visits"
   },
   "transport": {
     "title": "How to Get Here",

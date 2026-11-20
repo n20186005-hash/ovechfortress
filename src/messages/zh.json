@@ -15,6 +15,34 @@
     "backToHome": "返回首页"
   },
   "explore": {
+    "photoResized": "已缩小尺寸供网页展示",
+    "intro": "探索与引言",
+    "highlights": "景区特色",
+    "basics": "基础信息",
+    "name": "景点或路线名称",
+    "type": "景点类型",
+    "hours": "开放时间",
+    "admission": "门票价格",
+    "transport": "交通方式",
+    "discover": "发现魅力：历史、建筑与体验",
+    "furtherReading": "延伸探索",
+    "continueTo": "时间充裕可另安排",
+    "notice": "游览须知",
+    "stay": "住宿建议",
+    "reviews": "游客评价",
+    "rating": "评分",
+    "fortressRating": "奥韦奇要塞 Google 地图评分：{score}/5（{count} 条评价）",
+    "ratingUnavailable": "该到访点暂无可核实的独立评分。",
+    "fortressReviews": "查看奥韦奇要塞的 Google 地图评价",
+    "management": "景点管理与维护",
+    "observation": "历史背景与观察重点",
+    "access": "开放时间、门票与入场",
+    "route": "游览路线与交通",
+    "photography": "实景拍摄机位",
+    "faq": "常见问题",
+    "location": "地点与地图",
+    "visitSource": "查询最新参观安排",
+    "sitePlan": "地图按专题地点名称搜索。较小的遗迹请以现场导览图和标识为准。",
     "title": "探索奥韦奇要塞与周边",
     "description": "查看要塞遗迹、周边博物馆及从瓦尔纳出发的路线。",
     "all": "查看全部专题",
@@ -39,7 +67,7 @@
     "visitGuide": {
       "title": "游览建议",
       "items": [
-        "要塞全年开放，免费进入。",
+        "要塞按公布时段开放，入场需购票。",
         "最佳游览时间是清晨或傍晚。",
         "有长椅和休息区。",
         "适合带孩子和宠物散步。"
@@ -87,11 +115,11 @@
     "items": [
       {
         "question": "奥韦奇要塞 什么时候开放？",
-        "answer": "要塞全年开放，游客全天都可以进入。没有特定的营业时间限制。"
+        "answer": "瓦尔纳官方旅游网站公布的开放时间为周三至周日 09:00–17:30，出发前请核对变动。"
       },
       {
         "question": "需要门票吗？",
-        "answer": "不需要，所有游客都可以免费进入要塞。"
+        "answer": "需要。瓦尔纳官方旅游网站公布的票价为成人 2.05 欧元，儿童 1.02 欧元。"
       },
       {
         "question": "有儿童游乐场吗？",
@@ -127,10 +155,10 @@
   "hours": {
     "title": "开放时间",
     "park": "要塞进入",
-    "parkTime": "全年开放，24/7",
+    "parkTime": "周三至周日 09:00–17:30",
     "bestTime": "最佳游览时间",
     "bestTimeSpring": "春季：天气宜人，鲜花盛开",
-    "bestTimeSummer": "夏季：建议清晨或傍晚游览",
+    "bestTimeSummer": "夏季：可以在开门后较早时段参观",
     "bestTimeAutumn": "秋季：温度适中，适合散步",
     "bestTimeWinter": "冬季：人少，氛围宁静",
     "tip": "预留1-2小时充分游览。夏季请携带水和防晒用品。"
@@ -138,11 +166,11 @@
   "tickets": {
     "title": "门票信息",
     "park": "要塞进入",
-    "parkPrice": "免费",
+    "parkPrice": "成人 2.05 欧元 · 儿童 1.02 欧元",
     "parking": "停车",
     "parkingPrice": "周边街道停车位",
     "guided": "导游服务",
-    "guidedPrice": "无官方导游服务"
+    "guidedPrice": "请向景点咨询讲解安排"
   },
   "transport": {
     "title": "交通指南",
